@@ -1,0 +1,13 @@
+C:\Users\francisco.pegado\Documents\web-service\Liberação\Debug\Casablanca.DataContracts.dll
+C:\Users\francisco.pegado\Documents\web-service\Liberação\Debug\Casablanca.DataContracts.pdb
+C:\Users\francisco.pegado\Documents\web-service\Casablanca.DataContracts\obj\Debug\Casablanca.DataContracts.csprojResolveAssemblyReference.cache
+C:\Users\francisco.pegado\Documents\web-service\Casablanca.DataContracts\obj\Debug\Casablanca.DataContracts.dll
+C:\Users\francisco.pegado\Documents\web-service\Casablanca.DataContracts\obj\Debug\Casablanca.DataContracts.pdb
+C:\Users\francisco.pegado\Documents\we-service-compartilhado_hml\Liberação\Debug\Casablanca.DataContracts.dll
+C:\Users\francisco.pegado\Documents\we-service-compartilhado_hml\Liberação\Debug\Casablanca.DataContracts.pdb
+C:\Users\francisco.pegado\Documents\we-service-compartilhado_hml\Casablanca.DataContracts\obj\Debug\Casablanca.DataContracts.dll
+C:\Users\francisco.pegado\Documents\we-service-compartilhado_hml\Casablanca.DataContracts\obj\Debug\Casablanca.DataContracts.pdb
+C:\Users\francisco.pegado\Documents\web-service-compartilhado_hml\Casablanca.DataContracts\obj\Debug\Casablanca.DataContracts.dll
+C:\Users\francisco.pegado\Documents\web-service-compartilhado_hml\Casablanca.DataContracts\obj\Debug\Casablanca.DataContracts.pdb
+C:\Users\francisco.pegado\Documents\web-service-compartilhado_hml\Liberação\Debug\Casablanca.DataContracts.dll
+C:\Users\francisco.pegado\Documents\web-service-compartilhado_hml\Liberação\Debug\Casablanca.DataContracts.pdb

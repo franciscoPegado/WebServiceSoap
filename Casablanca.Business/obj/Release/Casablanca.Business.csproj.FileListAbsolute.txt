@@ -1,0 +1,6 @@
+D:\Projects\Casablanca\Casablanca.Business\obj\Release\Casablanca.Business.csprojResolveAssemblyReference.cache
+D:\Projects\Casablanca\Liberação\Release\Casablanca.Business.dll
+D:\Projects\Casablanca\Casablanca.Business\obj\Release\Casablanca.Business.dll
+J:\projects\Casablanca\Liberação\Release\Casablanca.Business.dll
+J:\projects\Casablanca\Casablanca.Business\obj\Release\Casablanca.Business.csprojResolveAssemblyReference.cache
+J:\projects\Casablanca\Casablanca.Business\obj\Release\Casablanca.Business.dll

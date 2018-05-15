@@ -1,0 +1,51 @@
+﻿
+<%@ ServiceHost Language="C#" 
+    Service="ReservasBaseService" 
+    Factory="Benner.Tecnologia.EnterpriseServiceLibrary.DynamicServiceHostFactory" %>
+
+using System;
+using System.ComponentModel;
+using System.ServiceModel;
+using System.ServiceModel.Activation;
+using System.ServiceModel.Description;
+using System.ServiceModel.Web;
+using Benner.Tecnologia.Common;
+using Benner.Tecnologia.Common.EnterpriseServiceLibrary;
+using Benner.Tecnologia.EnterpriseServiceLibrary;
+
+
+[ServiceContract]
+[DynamicHost(
+    AllowedBindings = BindingType.BasicHttp | BindingType.WebHttp, 
+    BasicHttpAddress = "", 
+    BasicHttpsConfigurationName = "", 
+    WebHttpAddress = "api",
+    WebHttpsConfigurationName = "")]
+public interface IReservasBaseService
+{
+
+    [OperationContract]
+    [WebInvoke(
+        Method = "POST",
+        BodyStyle = WebMessageBodyStyle.Bare )]
+    [Description("")]
+    Casablanca.DataContracts.Reservas.ConsultaReservasResponse ConsultarReservas(Casablanca.DataContracts.Reservas.ConsultaReservasRequest request);
+
+}
+
+
+public class ReservasBaseService : ServiceBase, IReservasBaseService
+{
+
+    public Casablanca.DataContracts.Reservas.ConsultaReservasResponse ConsultarReservas(Casablanca.DataContracts.Reservas.ConsultaReservasRequest request)
+    {
+        var result = CallBusinessComponent(
+            "Casablanca.Business.ReservasBase, Casablanca.Business",
+            "ConsultarReservas",
+            request);
+
+        return (Casablanca.DataContracts.Reservas.ConsultaReservasResponse)result;
+    }
+
+}
+

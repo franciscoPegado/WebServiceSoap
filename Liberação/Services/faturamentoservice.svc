@@ -1,0 +1,51 @@
+﻿
+<%@ ServiceHost Language="C#" 
+    Service="FaturamentoService" 
+    Factory="Benner.Tecnologia.EnterpriseServiceLibrary.DynamicServiceHostFactory" %>
+
+using System;
+using System.ComponentModel;
+using System.ServiceModel;
+using System.ServiceModel.Activation;
+using System.ServiceModel.Description;
+using System.ServiceModel.Web;
+using Benner.Tecnologia.Common;
+using Benner.Tecnologia.Common.EnterpriseServiceLibrary;
+using Benner.Tecnologia.EnterpriseServiceLibrary;
+
+
+[ServiceContract]
+[DynamicHost(
+    AllowedBindings = BindingType.BasicHttp, 
+    BasicHttpAddress = "", 
+    BasicHttpsConfigurationName = "", 
+    WebHttpAddress = "api",
+    WebHttpsConfigurationName = "")]
+public interface IFaturamentoService
+{
+
+    [OperationContract]
+    [WebInvoke(
+        Method = "POST",
+        BodyStyle = WebMessageBodyStyle.Bare )]
+    [Description("")]
+    Casablanca.DataContracts.Faturamento.ConsultaFaturasResponse ConsultarFaturas(Casablanca.DataContracts.Faturamento.ConsultaFaturasRequest request);
+
+}
+
+
+public class FaturamentoService : ServiceBase, IFaturamentoService
+{
+
+    public Casablanca.DataContracts.Faturamento.ConsultaFaturasResponse ConsultarFaturas(Casablanca.DataContracts.Faturamento.ConsultaFaturasRequest request)
+    {
+        var result = CallBusinessComponent(
+            "Casablanca.Business.Faturamento, Casablanca.Business",
+            "ConsultarFaturas",
+            request);
+
+        return (Casablanca.DataContracts.Faturamento.ConsultaFaturasResponse)result;
+    }
+
+}
+

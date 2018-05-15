@@ -1,0 +1,6 @@
+D:\Projects\Casablanca\Casablanca.DataContracts\obj\Release\Casablanca.DataContracts.csprojResolveAssemblyReference.cache
+D:\Projects\Casablanca\Liberação\Release\Casablanca.DataContracts.dll
+D:\Projects\Casablanca\Casablanca.DataContracts\obj\Release\Casablanca.DataContracts.dll
+J:\projects\Casablanca\Liberação\Release\Casablanca.DataContracts.dll
+J:\projects\Casablanca\Casablanca.DataContracts\obj\Release\Casablanca.DataContracts.dll
+J:\projects\Casablanca\Casablanca.DataContracts\obj\Release\Casablanca.DataContracts.csprojResolveAssemblyReference.cache

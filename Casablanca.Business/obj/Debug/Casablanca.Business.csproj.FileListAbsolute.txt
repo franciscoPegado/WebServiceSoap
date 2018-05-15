@@ -1,0 +1,10 @@
+C:\Users\francisco.pegado\Documents\we-service-compartilhado_hml\Liberação\Debug\Casablanca.Business.dll
+C:\Users\francisco.pegado\Documents\we-service-compartilhado_hml\Liberação\Debug\Casablanca.Business.pdb
+C:\Users\francisco.pegado\Documents\we-service-compartilhado_hml\Casablanca.Business\obj\Debug\Casablanca.Business.csprojResolveAssemblyReference.cache
+C:\Users\francisco.pegado\Documents\we-service-compartilhado_hml\Casablanca.Business\obj\Debug\Casablanca.Business.dll
+C:\Users\francisco.pegado\Documents\we-service-compartilhado_hml\Casablanca.Business\obj\Debug\Casablanca.Business.pdb
+C:\Users\francisco.pegado\Documents\web-service-compartilhado_hml\Casablanca.Business\obj\Debug\Casablanca.Business.dll
+C:\Users\francisco.pegado\Documents\web-service-compartilhado_hml\Liberação\Debug\Casablanca.Business.dll
+C:\Users\francisco.pegado\Documents\web-service-compartilhado_hml\Liberação\Debug\Casablanca.Business.pdb
+C:\Users\francisco.pegado\Documents\web-service-compartilhado_hml\Casablanca.Business\obj\Debug\Casablanca.Business.pdb
+C:\Users\francisco.pegado\Documents\web-service-compartilhado_hml\Casablanca.Business\obj\Debug\Casablanca.Business.csprojResolveAssemblyReference.cache

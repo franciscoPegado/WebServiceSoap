@@ -1,0 +1,51 @@
+﻿
+<%@ ServiceHost Language="C#" 
+    Service="AdiantamentoService" 
+    Factory="Benner.Tecnologia.EnterpriseServiceLibrary.DynamicServiceHostFactory" %>
+
+using System;
+using System.ComponentModel;
+using System.ServiceModel;
+using System.ServiceModel.Activation;
+using System.ServiceModel.Description;
+using System.ServiceModel.Web;
+using Benner.Tecnologia.Common;
+using Benner.Tecnologia.Common.EnterpriseServiceLibrary;
+using Benner.Tecnologia.EnterpriseServiceLibrary;
+
+
+[ServiceContract]
+[DynamicHost(
+    AllowedBindings = BindingType.BasicHttp, 
+    BasicHttpAddress = "", 
+    BasicHttpsConfigurationName = "", 
+    WebHttpAddress = "api",
+    WebHttpsConfigurationName = "")]
+public interface IAdiantamentoService
+{
+
+    [OperationContract]
+    [WebInvoke(
+        Method = "POST",
+        BodyStyle = WebMessageBodyStyle.Bare )]
+    [Description("")]
+    Casablanca.DataContracts.Adiantamento.ConsultaAdiantamentoResponse ConsultarAdiantamento(Casablanca.DataContracts.Adiantamento.ConsultaAdiantamentoRequest request);
+
+}
+
+
+public class AdiantamentoService : ServiceBase, IAdiantamentoService
+{
+
+    public Casablanca.DataContracts.Adiantamento.ConsultaAdiantamentoResponse ConsultarAdiantamento(Casablanca.DataContracts.Adiantamento.ConsultaAdiantamentoRequest request)
+    {
+        var result = CallBusinessComponent(
+            "Casablanca.Business.Adiantamento, Casablanca.Business",
+            "ConsultarAdiantamento",
+            request);
+
+        return (Casablanca.DataContracts.Adiantamento.ConsultaAdiantamentoResponse)result;
+    }
+
+}
+
